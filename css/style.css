@@ -1,0 +1,460 @@
+/* Geen scrollbarr begin */
+::-webkit-scrollbar {
+    display: none; 
+}
+/* Geen scrollbarr einde */
+
+
+body {
+    background-color: #282828;
+    font-family: Helvetica, sans-serif;
+}
+
+/** Navigatie bar begin**/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 7px;
+}
+  
+  /* Aan welke kant de knoppen zitten */
+li {
+    float: left;
+}
+
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center; /* Tekst in het midden van de knop */
+    padding: 14px 16px;
+    text-decoration: none; /* Geen streep onder de tekst op de knoppen */
+}
+
+  /* De kleur als je met je cursor op een van de knoppen staat */
+li a:hover:not(.active) {
+    background-color: #111; 
+}
+  
+.socials {
+    background-color: #06446C; /* De kleur van de socials button rechts */
+}
+/** Navigatie bar einde **/
+
+/** Pagina Titel begin**/
+.heading {
+    background: rgb(40,40,40);
+    background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(108,108,111,1) 50%, rgba(40,40,40,1) 100%); /** De gradient van de banner **/
+    height: 9vw;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 0.3vw;
+    font-size: 5vw;
+    text-shadow: 1.5px 1.5px gray; /* Lichte grijze schaduw achter de titel */
+}
+/** Pagina Titel einde **/
+
+/** Index.html begin **/
+
+.intro {
+	  text-align: center; /** Zet title in het midden **/
+    color: #f2f2f2;
+}
+
+.intro  p {
+    margin: 5px; /** Ruimte tussen de tekst **/
+	  font-size: 20px;
+	  text-align: center;
+}
+
+.main-title {
+	  font-size: 60px;
+	  text-shadow: 1.5px 1.5px #006c91; /** Schaduw voor de tekst **/
+    margin: 100px; /** Tekst meer naar beneden **/
+}
+
+.hr-main {
+    background: #00a9e2; /** Kleur van de streep **/
+	  margin: 2px; /** Streep dichter onder de Titel **/
+	  height: 3px;
+	  width: 150px;
+	  border: hidden; /** Geen omlijning om de streep **/
+    /** Zorgt dat de streep in het midden staat **/
+	  margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+/** Index.html einde **/
+
+/* Foto.html begin */
+
+.slideshow-container {
+  position: relative; /** Nummer van de afbeelding staat hiermee in de afbeelding **/
+  margin-top: 1vw; 
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  /** Ruimte bij de tekst van top en links **/
+  margin-top: 2vw;
+  margin-left: 2vw; 
+}
+
+.numbertext {
+  color: #000000; /** Tekst kleur van de cijfers in de afbeelding **/
+  font-size: 16px;
+  font-weight: bold; /* Tekst dikgedrukt maken */
+  padding: 8px 12px; /** Verder van rechts bovenin af **/
+  position: absolute; /* Tekst komt in de foto */
+  /** Zodat de tekst rechts komt te staan **/
+  top: 8px;
+  right: 16px;
+}
+
+.fade {
+  /** Animatie voor de afbeelding switch **/
+  animation-name: fade; /** Type overgang van foto naar foto **/
+  animation-duration: 3.5s; /** Tijd van de animatie **/
+}
+
+@keyframes fade {
+  /** De opactity tijdens de fade van de foto **/
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/* Foto.html einde */
+
+/* countdown.html begin */
+
+.face {
+    border-radius: 15px; /** Ronde hoeken van de foto **/
+}
+
+.product{
+    display: flex; /** Zodat de tekst aanpast zodat het naast de foto komt **/
+    gap: 50px; /** De ruimte tussen de foto en de tekst **/
+    margin-top: 1.5vw;
+}
+  
+.details{
+      /* Korte tekst boven de countdown */
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px; 
+}
+    
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.timer{
+    display: flex; /* Boxes naast elkaar ipv onder elkaar */
+    text-align: center;
+    margin-left: 1rem;
+    gap: 50px; /* Plek tussen de box uren en minuten enz. */
+    color:#F9F871; 
+    margin-top: -10px;
+}
+
+
+    /* Timers style */
+.days{
+    background-color: #06446C;
+    padding: 11px; /* Ruimte van tekst tot border van de box */
+    font-size: 22px;
+    border-radius: 15px;
+}
+    
+.hours{
+    background-color: #06446C;
+    padding: 11px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+
+.mins{
+    background-color: #06446C;
+    padding: 11px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+    
+.secs{
+    background-color: #06446C;
+    padding: 11px;
+    font-size: 22px;
+    border-radius: 15px;
+}
+    
+h3{
+    color:#06446C;
+}
+    
+.offer{
+    flex-basis: 6rem;
+}
+    
+p{
+    text-align: left;
+    color: white;
+}
+
+/* countdown.html einde */
+
+/* Hobbies.html begin */
+
+.titel {
+    text-align: center;
+    color: white;
+    margin-top: 0.3vw; /* vw Zodat het meepast aan de pagina grootte */
+    font-size: 45px;
+    opacity: 0.90;
+    text-shadow: 1.5px 1.5px gray; /* Geeft een schaduw aan de tekst */
+  }
+  
+  .tekst {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px); /* Het blur effect achter de tekst */
+    color: white;
+    font-weight: bold; /* tekst dikgedrukt */
+    position: absolute;
+    margin-top: 15vh; /* Waar het geblurde tekst blok staat. Dit in procenten zodat als je de pagine grootte aanapst dit mee gaat */
+    width: 75%; /* Hoe breed het tekst blok is. Dit ook weer in procenten zodat het mee aanpast wanneer je de grotte aanpast */
+    padding: 20px;
+    text-align: center; /* Tekst in het midden*/
+    border-radius: 8px;
+    border: 4px solid #06446C;
+    left: 9%; /* Blurred Box in het midden */
+  } 
+
+.hr-hobbies {
+  background: #06446C;
+	margin: 2px; /* De ruimte tussen de zinnen en de streep*/
+	height: 5px;
+	width: 250px;
+  border-radius:5px;
+	border: hidden; /* Geen omlijning bij de streep */
+
+      /* Zodat de streep aan beide kanten even veel afstand heeft van border */
+	margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+/* Hobbies.html begin */
+
+/* Socials begin */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Socials komen onder elkaar bij kleinere window */
+    padding: 40px 0;
+}
+  
+.container .box {
+    position: relative; /* Kleuren komen de netjes achter socials te staan */
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw 3vw;
+    transition: 0.5s; 
+}
+  
+  .container .box::before
+  {
+    content:' '; /* Zodat de gekleurde blokken niet geblurred worden */
+    position: absolute; /* Zodat de gekleurde blokken achter de geblurde blokken staan */
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg); /* Hoe schuin het gekleurde blok staat zonder erover heen te gaan met je cursor */
+    transition: 0.5s; /* Hoelang de transformation duurt als je erop staat met je cursor */
+}
+  
+.container .box::after
+{
+  /* Schaduw van de kleuren */
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+  
+.container .box:hover:before,
+.container .box:hover:after
+{
+  /* Zo tranformeert de kleuren rechthoek achter de socials mee als je eroverheen hovert */
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+/* De kleuren van de achtergrond achter geblurde blokken */
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+  
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+  
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+  /* De plek waar de kleine blurred boxes komen te staan */
+  .container .box span
+  {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  /* het onderste bewegende blokje als je met je cursor op een box staat */   
+  .container .box span::before
+  {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.1s;  
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  }
+  
+  .container .box:hover span::before
+  {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+
+  .container .box span::after
+  {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    animation-delay: -1s;
+  }
+
+  .container .box:hover span:after
+  {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1
+  }
+  
+  @keyframes animate
+  /* De animatie als je op een box staat van de kleine blokjes die heen en weer bewegen */
+  /* Hoever het blokje telkens beweegt */
+  {
+    0%, 100%
+    {
+      transform: translateY(10 px);
+    }
+    
+    50%
+    {
+      transform: translate(-10px);
+    }
+  }
+  
+  .container .box .content
+  {
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); /* De box die geblurred is */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* De schaduw achter de geblurde box */
+    border-radius: 8px;
+    z-index: 1; /* Zodat dit boven de andere dingen komt en zichtbaar word */
+    color: #fff;
+  }
+  
+  .container .box .content h2
+  /* De tekst op de gebrlurde box */
+  {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .container .box .content p
+  /* De titel op de gebrlurde box */
+  {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+  }
+  
+  .container .box .content a
+  /* Tekst die op de knop staat */
+  {
+    display: inline-block; /* Waar de knop staat het blokje */
+    font-size: 1.1em; 
+    color: #111;
+    background: #fff;
+    padding: 10px; /* Hoe groot de knop is */
+    border-radius: 4px; /* De ronde afronding */
+    text-decoration: none; /* Zodat er geen streep onder tekst in de knop staat */
+    font-weight: 700;
+    margin-top: 5px; 
+  }
+  
+  .container .box .content a:hover
+  /* Dit is voor de knop als je eroverheen gaat met je cursor  */
+  {
+    background: #06446C;
+    color: white;
+    box-shadow: 0 1px 15px rgba(1, 1, 1, 0.4); /* Lichte zwarte schaduw naast de knop */
+  }
+
+/* Socials Einde */
